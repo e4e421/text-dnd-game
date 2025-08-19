@@ -1,6 +1,22 @@
 import random
 
 # now lets start with a story line, with characters and plot twists, with name insertion and cool tools.
+'''
+Developer's note:
+1. set up core interactive functions.
+    1a. player statistic(level, health, name etc.)
+    1b. moving function
+2. Environment seting
+    2a. NPC location based on x y cords.
+3. set up main storyline.
+    3a. activation and welcome
+    3b. chapter 1 in island 1
+    3c. chapter 2 in island 2 etc.
+4. linking player action with storyline.
+5. code for rare cases.
+6. more
+'''
+
 
 #function assignment
 
