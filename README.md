@@ -1,9 +1,9 @@
 > This page is still under construction.(Aug 19,2025) 
-# Academic-research-how
-This repository is for some reading materials and most importantly, how I do academic research as a MSc student. 
-## Why doing research?
-I am a MSc student, having done quantitative research in gamification and industrial management, for optimisation like groubi. I decide to have a master degree in ESG management cause I like learning and make friends along the way. Writing and reading don't bother me at all, even so I would create my own little page on github just as you are looking right now.
-## What 
-What can 
+# Text based dnd game
+This is my first python based text dnd storyline, due to the limitation of my coding ability, this project will be mainly be in .py form.
+## Why dnd game?
+I love dnd games and the magnificent story plots within, I am obsessed with all gamification elements build into a adventure story, and the interaction between player and NPCs.
+## What to expect?
+My story starts from a worrier entered a world of ESG, soon be greeted by the lord of this ESG world, the journey begain. The worrior made several unexpected encounters and ended up...
 
 ## Reference
