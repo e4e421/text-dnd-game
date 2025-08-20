@@ -16,7 +16,26 @@ Developer's note:
 5. code for rare cases.
 6. more
 '''
+#variable assignment
 
+player_health = 10
+
+x_cord = 0
+y_cord = 0
+
+player_name = ""
+player_level = 0
+
+key = ""
+
+island_1_name = "Ground"
+island_1_intro = "where everything started"
+
+island_2_name = "Olive"
+island_2_intro = "where we create wonders through vine and oil"
+
+island_3_name = "Mistake"
+island_3_intro = "where you have to indulge on my occational mistakes"
 
 #function assignment
 
@@ -34,9 +53,11 @@ def encounter(npc):
             print(f"An angle have blessed you with health and luck.")
 
 def get_player_status():
+    print("----------------------------------")
     print(f"player {player_name} status as: ")
     print(f"health: {player_health}")
     print(f"level: {player_level}")
+    print("----------------------------------")
     return None
 
 def move(input):
@@ -63,34 +84,44 @@ def assign_new_rank():
         return "Secondary"
     elif player_level >= 30 and player_level < 40:
         return 
+    
+player_rank = assign_new_rank()
 
 #activate storyline
 
 def set_player_name():
     player_name = input("Welcome to the world of ESG, I am the lord here." \
     " how my I call you my brave worrier? \n")
-    if input(f"Awesome, welcome to this world my friend. From your record, you are {player_name} right?(y/n)") == "y":
-        print(f"Welcome to the world {player_name}, as you are new here, I would like to entroduce you to the 'ranking' system.")
+    if input(f"Awesome, welcome to this world my friend. From my record, you are {player_name} right?(y/n)") == "y":
+        print(f"Welcome to the world {player_name}, lets get started!/n")
+        main_story_line()
     else:
-        player_name = input("sorry I didn't catch that, how my I call you?")
+        player_name = input("sorry I didn't catch that, how may I call you?")
     return player_name
+
+def main_story_line():
+    activate_chapter_1()
+    if activate_chapter_1() == "done":
+        activate_chapter_2()
+        if activate_chapter_2() == "done":
+            activate_chapter_3()
+    else: None
 
 def activate_chapter_1():
     get_player_status()
+    print(f"Welcome to {island_1_name}, {island_1_intro}./n")
     print(f"{player_name}, from now on you are a ")
+    return "done"
 
-#variable assignment
+def activate_chapter_2():
+    get_player_status()
+    print(f"Welcome to {island_2_name}, {island_2_intro}./n")
+    return "done"
 
-player_health = 10
-
-x_cord = 0
-y_cord = 0
-
-player_name = ""
-player_level = 0
-player_rank = assign_new_rank()
-
-key = ""
+def activate_chapter_3():
+    get_player_status()
+    print(f"Welcome to {island_3_name}, {island_3_intro}./n")
+    return "done"
 
 #key command line assignment
 
