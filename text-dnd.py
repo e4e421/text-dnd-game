@@ -95,7 +95,7 @@ key = ""
 #key command line assignment
 
 while key != "quit":
-    key = input("command line")
+    key = input(": ")
     player_name = set_player_name()
     if key == "player_status":
         get_player_status()
