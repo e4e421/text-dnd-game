@@ -20,6 +20,19 @@ Developer's note:
 
 #function assignment
 
+def encounter(npc):
+    if npc == "angle":
+        if player_level >= 10:
+            print(f"You have encountered {npc}")
+            print(f"An angle have blessed you with health and luck.")
+            get_player_status()
+            if player_health <= 9:
+                player_health = player_health + 1
+            else: None
+        elif player_level >= 20:
+            print(f"You have encountered {npc}")
+            print(f"An angle have blessed you with health and luck.")
+
 def get_player_status():
     print(f"player {player_name} status as: \n ")
     print(f"health: {player_health}\n")
@@ -62,20 +75,22 @@ def activate_storyline():
         activate_chapter_1()
     else:
         player_name = input("sorry I didn't catch that, how my I call you?\n")
+    return player_name
 
 def activate_chapter_1():
+    get_player_status()
     print(f"{player_name}, from now on you are a ")
 
 #variable assignment
 
-player_health = 100
+player_health = 10
 
 x_cord = 0
 y_cord = 0
 
 player_name = ""
 player_level = 0
-player_rank = assign_new_rank(player_level)
+player_rank = assign_new_rank()
 
 key = ""
 
@@ -83,10 +98,10 @@ key = ""
 
 while key != "quit":
     key = input("command line")
-    activate_storyline()
+    player_name = activate_storyline()
     if key == "player_status":
         get_player_status()
     elif key == "w" or key == "a" or key == "s" or key == "d":
         move(key)
     elif key == "quit":
-        break
+        break   
