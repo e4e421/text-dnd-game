@@ -1,6 +1,6 @@
 > This page is still under construction.(Aug 19,2025) 
 # Text based dnd game
-This is my first python based text dnd storyline, due to the limitation of my coding ability, this project will be mainly be in .py form.
+This is my first python based text dnd storyline, due to the limitation of my coding ability, this project will be mainly be in .py form. As I progress further on my coding ability, I may use pygame for the GUI part of the game.
 ## Why dnd game?
 I love dnd games and the magnificent story plots within, I am obsessed with all gamification elements build into a adventure story, and the interaction between player and NPCs.
 ## What to expect?
