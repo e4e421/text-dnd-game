@@ -1,6 +1,10 @@
 ## background
+
+A world on sky island, everyone has life expectancy of only 10 years, highly developed medieval style world, a mix of assassin's creed and the witcher series.
 ## Main player role
-## ultimate goal
-### islands
+
+- 
 ### NPCs
 - The Lord of ESG world
+## ultimate goal
+### islands
